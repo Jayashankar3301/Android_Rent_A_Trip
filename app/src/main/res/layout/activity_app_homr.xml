@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_app_homr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jayashankar.rentataxi.AppHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/submittrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/myrides"
+            android:layout_toEndOf="@+id/button8"
+            android:layout_toRightOf="@+id/button8"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/searchtrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/requeststoyou"
+            android:layout_toStartOf="@+id/requeststoyou"
+            android:text="Search"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/addvehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button6"
+            android:layout_alignRight="@+id/button6"
+            android:layout_below="@+id/button2"
+            android:text="Add Vehicle" />
+
+        <Button
+            android:id="@+id/myrides"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button4"
+            android:layout_alignBottom="@+id/button4"
+            android:layout_alignLeft="@+id/button7"
+            android:layout_alignStart="@+id/button7"
+            android:text="my rides" />
+
+        <Button
+            android:id="@+id/myrequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_alignRight="@+id/button2"
+            android:layout_below="@+id/button4"
+            android:text="my requests" />
+
+        <Button
+            android:id="@+id/requeststoyou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button8"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="requests to you" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button6"
+            android:layout_centerHorizontal="true"
+            android:text="logout"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</RelativeLayout>

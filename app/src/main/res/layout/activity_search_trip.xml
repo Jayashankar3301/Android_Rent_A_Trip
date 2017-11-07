@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_trip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jayashankar.rentataxi.SearchTrip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="SEARCH TRIP"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            tools:text="Search Trip" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompletefrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type in your From Location" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompleteto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type in your to Location" />
+
+        <EditText
+            android:id="@+id/serach_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText11"
+            android:ems="10"
+            android:hint="yyyy-mm-dd"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/search_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Submit" />
+    </LinearLayout>
+</RelativeLayout>
